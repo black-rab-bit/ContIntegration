@@ -1,7 +1,9 @@
 package ru.netology.statistic;
 
+import org.jetbrains.annotations.NotNull;
+
 public class StatisticsService {
-    public long findMax(long[] incomes) {
+    public long findMax(long @NotNull [] incomes) {
         long currentMaxIndex = 0;
         long currentMax = incomes[0];
         for (long income : incomes)
